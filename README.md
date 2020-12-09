@@ -32,6 +32,47 @@
 
 5.最后使用write方法将学生基本信息写入目的文件。
 
+##核心代码
+ System.out.println("请输入要查询的字符：");
+        String z = input.next();
+        w = xms.getCharMaps(z,str1);
+
+        System.out.println("******************学生信息*********************");
+        Student dd = new Student();
+        dd.setName("唐映枫");
+        dd.setAge(21);
+        dd.setNumber(2018310888);
+        dd.setSex("男");
+        System.out.println("学生姓名:" + dd.getName());
+        System.out.println("学生年龄:" + dd.getAge());
+        System.out.println("学生编号:" + dd.getNumber());
+        System.out.println("学生性别:" + dd.getSex());
+
+        System.out.println("处理完成");
+        System.out.println(z + "出现次数为："+ z + "次");
+    }
+}
+采用Scanner类实例化学生:输入学生姓名，性别，年龄，编号。
+class Handle{
+    public static StringBuffer Read(){
+        String str1 = "";
+        StringBuffer str2 = new StringBuffer(str1);
+        try {
+            File file = new File("C:\\Java\\File\\B.txt");
+            FileReader fr = new FileReader(file);
+            BufferedReader bReader = new BufferedReader(fr);
+            while ((str1 =bReader.readLine()) != null) {
+                str2.append(str1);
+            }
+            fr.close();
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return  str2;
+    }
+读取处理文本，整理文本输出。
 ##实验结果
 汉皇重色思倾国，御宇多年求不得。
 杨家有女初长成，养在深闺人未识。
@@ -56,8 +97,10 @@
 ******************学生信息*********************
 学生姓名:唐映枫
 学生年龄:21
-学生编号:2019310866
+学生编号:2018310888
 学生性别:男
 作业处理完成
-3出现的次数为：3次
+2出现的次数为：2次
 
+##实验感想
+通过这次实验，让我理解了字符串的含义，懂得了异常的处理方法，明白了缓冲流的作用，懂得了如何检验程序是否成功运行。
