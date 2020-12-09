@@ -12,16 +12,16 @@ public class experiment_5 {
         str2 = one.HW(str1);
         Handle.Write(str2);
 
-        System.out.println("请输入要查询的字符：");
+        System.out.println("查询字符：");
         String z = input.next();
         w = xms.getCharMaps(z,str1);
 
         System.out.println("******************学生信息*********************");
-        Student xm = new Student();
-        xm.setName("唐映枫");
-        xm.setAge(21);
-        xm.setNumber(2018310888);
-        xm.setSex("男");
+        Student dd = new Student();
+        dd.setName("唐映枫");
+        dd.setAge(21);
+        dd.setNumber(2018310888);
+        dd.setSex("男");
         System.out.println("学生姓名:" + xm.getName());
         System.out.println("学生年龄:" + xm.getAge());
         System.out.println("学生编号:" + xm.getNumber());
