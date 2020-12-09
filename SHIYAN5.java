@@ -22,10 +22,10 @@ public class experiment_5 {
         dd.setAge(21);
         dd.setNumber(2018310888);
         dd.setSex("男");
-        System.out.println("学生姓名:" + xm.getName());
-        System.out.println("学生年龄:" + xm.getAge());
-        System.out.println("学生编号:" + xm.getNumber());
-        System.out.println("学生性别:" + xm.getSex());
+        System.out.println("学生姓名:" + dd.getName());
+        System.out.println("学生年龄:" + dd.getAge());
+        System.out.println("学生编号:" + dd.getNumber());
+        System.out.println("学生性别:" + dd.getSex());
 
         System.out.println("作业处理完成");
         System.out.println(z + "出现次数为："+ z + "次");
